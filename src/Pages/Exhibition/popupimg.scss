@@ -1,0 +1,61 @@
+.card-onclick {
+    background-color: #007bff80;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    animation: crescendo 1s;
+
+    .img {
+      margin-top: 5vh;
+      width: auto;
+      height: 70vh;
+      text-align: center;
+      // position: fixed;
+      @media screen and (max-width: 500px) {
+        height: 49vh;
+      }
+      @media screen and (max-width: 376px) {
+        height: 41vh;
+      }
+      @media screen and (max-width: 326px) {
+        height: 36vh;
+      }
+    }
+    .img-1 {
+      margin-top: 5vh;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+      width: auto;
+      height: 78vh;
+      text-align: center;
+      position: fixed;
+
+      // position: fixed;
+    }
+
+    .button-1 {
+      display: inline-block;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      text-transform: uppercase;
+      font-family: arial;
+      transition: transform 0.2s;
+      &:hover {
+        box-shadow: 0px 0px 10px black;
+        transform: scale(1.1);
+      }
+    }
+  }
+  @keyframes crescendo {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

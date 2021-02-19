@@ -1,0 +1,104 @@
+.paddingContainer{
+  padding-left: 265px !important;
+  padding-right: 265px !important;
+}
+
+
+.backgroud-Gruid{
+    background-color:#1e1f26 ;
+    width: 100%;
+    height: 100%;
+}
+.font-Gruid{
+    padding-top: 80px;
+
+        h1 {
+          font-weight: 1;
+          font-size: 50px !important;
+          text-align: center;
+          padding-bottom: 2px;
+          color: #16bfee;
+        }
+      
+        p {
+          text-align: center;
+          margin-top: 0;
+          color: #fff;
+          font-weight: 1;
+        
+        }
+
+      
+}
+.font-gruid2{
+    padding-top: 40px;
+    p{
+    padding-left: 20px;
+    text-align: left;
+
+    color: #fff;
+    font-weight: 1;
+    }
+}
+
+//buttom
+.buttoncenter{
+    align-items: center;
+    text-align: center;
+}
+.button {
+    
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #16bfee;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media screen and (max-width: 767px) {
+    .font-Gruid{
+    
+            h1 {  
+              font-size: 20px !important;
+            }
+          
+            p {
+                font-size: 9px !important;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+  }
